@@ -1,6 +1,7 @@
 import { Fragment } from "react";
 
-import Navbar from "../components/common/Navbar";
+import Navbar from "./Navbar";
+import Footer from "./Footer";
 
 
 const MainLayout = ({ children }) => {
@@ -8,6 +9,7 @@ const MainLayout = ({ children }) => {
         <Fragment>
             <Navbar />
             {children}
+            <Footer />
         </Fragment>
     );
 }

@@ -10,6 +10,12 @@ body {
 
 
 /*! START Footer styles */
+footer {
+    background-color: #090C0F;
+    margin-top: 60px;
+    padding: 55px 0;
+}
+
 .footer-social-content {
     margin-top: 20px;
     display: flex;
