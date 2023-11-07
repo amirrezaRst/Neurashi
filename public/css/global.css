@@ -9,8 +9,351 @@ body {
 }
 
 
+/*todo START Home Page styles */
+/*! START Home Header styles */
+.home-content {
+    background-image: url("../images/h_bg-1.jpg");
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    width: 100%;
+}
+
+.home-content header.home-hero-header h1 {
+    font-size: 70px;
+    font-weight: 540;
+    margin-bottom: 0;
+    /* background: -webkit-linear-gradient(40deg, #582AC7, #672560); */
+    background: -webkit-linear-gradient(320deg, #3A1A93, #5B40AA);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.home-content header.home-hero-header h1 span {
+    font-size: 70px;
+    background: -webkit-linear-gradient(320deg, #190a71, #1D83BA);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.home-content header.home-hero-header h2 {
+    color: transparent;
+    -webkit-text-stroke-width: 1px;
+    background: -webkit-linear-gradient(320deg, #331789, #1D83BA);
+    -webkit-background-clip: text;
+    -webkit-text-stroke: 3px transparent;
+    color: #0E1116;
+}
+
+.scroll-down-gif {
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    right: 50%;
+    width: 100px;
+}
+
+.home-content header .home-header-image {
+    animation-name: home-header-animate;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+    animation-direction: alternate;
+}
+
+@keyframes home-header-animate {
+    5% {
+        transform: translateY(2px);
+    }
+
+    10% {
+        transform: translateY(5px);
+    }
+
+    15% {
+        transform: translateY(8px);
+    }
+
+    20% {
+        transform: translateY(11px);
+    }
+
+    25% {
+        transform: translateY(14px);
+    }
+
+    30% {
+        transform: translateY(17px);
+    }
+
+    35% {
+        transform: translateY(20px);
+    }
+
+    40% {
+        transform: translateY(23px);
+    }
+
+    45% {
+        transform: translateY(26px);
+    }
+
+    50% {
+        transform: translateY(29px);
+    }
+
+    55% {
+        transform: translateY(32px);
+    }
+
+    60% {
+        transform: translateY(35px);
+    }
+
+    65% {
+        transform: translateY(38px);
+    }
+
+    70% {
+        transform: translateY(41px);
+    }
+
+    75% {
+        transform: translateY(44px);
+    }
+
+    80% {
+        transform: translateY(47px);
+    }
+
+    85% {
+        transform: translateY(50px);
+    }
+
+    90% {
+        transform: translateY(53px);
+    }
+
+    95% {
+        transform: translateY(56px);
+    }
+
+    100% {
+        transform: translateY(60px);
+    }
+}
+
+/*? END Home Header styles */
+
+
+
+/*! START Home Chart styles */
+section#home-chart-container {
+    margin-top: 170px;
+}
+
+section#home-chart-container .info-section {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+
+section#home-chart-container h2 {
+    font-size: 36px;
+    font-weight: 700;
+    background: -webkit-linear-gradient(310deg, #3b1f95, #402a89de, #1561a4, #1c69ab);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@media screen and (max-width:900px) {
+    section#home-chart-container h2 {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width:767px) {
+    section#home-chart-container h2 {
+        font-size: 30px;
+    }
+}
+
+section#home-chart-container p {
+    color: #a6a6a6;
+}
+
+section#home-chart-container button {
+    /* background: linear-gradient(10deg, #3b1f95, #402a89de); */
+    border: 2px solid #3b1f95;
+    font-weight: normal;
+    color: #503c92;
+    font-size: 1.08em;
+    padding: 5px 25px;
+    transition: all .3s;
+}
+
+section#home-chart-container button:hover {
+    background: linear-gradient(310deg, #3d1bad, #402a89);
+    /* border: 2px solid transparent; */
+    /* background: #3b1f95; */
+    color: #ffffffd0;
+}
+
+section#home-chart-container img {
+    border-radius: 7px;
+}
+
+/*? END Home Chart styles */
+
+
+
+/*! START Home Reporter styles */
+section#home-reporter-container {
+    margin-top: 170px;
+    /* background: -webkit-linear-gradient(310deg, #3b1f95, #1561a4); */
+    background: linear-gradient(300deg, #3b1f95, #503390, #1A207E);
+    background-size: 180% 180%;
+    animation: gradient-animation 13s ease infinite;
+}
+
+@keyframes gradient-animation {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+section#home-reporter-container .info-section {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+
+section#home-reporter-container h2 {
+    font-size: 33px;
+    font-weight: 600;
+    color: #fff;
+}
+
+@media screen and (max-width:900px) {
+    section#home-reporter-container h2 {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width:767px) {
+    section#home-reporter-container h2 {
+        font-size: 30px;
+    }
+}
+
+section#home-reporter-container p {
+    color: #a6a6a6;
+}
+
+section#home-reporter-container button {
+    /* background: linear-gradient(10deg, #3b1f95, #402a89de); */
+    border: 2px solid #cecece;
+    font-weight: normal;
+    color: #cecece;
+    font-size: 1.08em;
+    margin-top: 5px;
+    padding: 5px 25px;
+    transition: all .3s;
+}
+
+section#home-reporter-container button:hover {
+    /* background: linear-gradient(310deg, #3d1bad, #402a89); */
+    background: #cecece;
+    color: #503c92;
+    /* color: #ffffffd0; */
+}
+
+section#home-reporter-container img {
+    border-radius: 7px;
+}
+
+/*? END Home Art styles */
+
+
+
+
+/*! START Home Services styles */
+
+section#home-services-container {
+    margin-top: 100px;
+    /* background: linear-gradient(); */
+}
+
+
+section#home-services-container h3 {
+    margin-top: 100px;
+    color: #fff;
+    font-weight: 640;
+    font-size: 30px;
+}
+
+.home-services-content {
+    display: grid;
+    grid-column: 2;
+    margin-top: 40px;
+}
+
+.home-services-content .services-items {
+    background-color: transparent;
+    background-image: linear-gradient(121deg, #FFFFFF0D 25%, #209CFA24 100%);
+    backdrop-filter: blur(5px);
+    border-radius: 5px;
+    padding: 25px 25px;
+    transition: all .2s;
+    display: flex;
+}
+
+.badge-purple {
+    background-color: #7B59C5;
+    color: #fff !important;
+    font-size: 0.75em !important;
+    padding: 2px 10px;
+    border-radius: 20px;
+    display: inline-block;
+}
+
+
+.home-services-content .services-items h2 {
+    font-weight: 700;
+    font-size: 24px;
+    color: #7B59C5;
+}
+
+.home-services-content .services-items p {
+    color: #bdbdbd;
+    font-size: 13px;
+}
+
+.home-services-content .services-items img {
+    width: 160px !important;
+    height: 160px !important;
+    filter: brightness(100%) contrast(100%) saturate(100%) blur(0px) hue-rotate(45deg);
+    transition: all .4s;
+}
+
+.home-services-content .services-items:hover img {
+    filter: none;
+}
+
+/*? END Home styles */
+
 /*! START Footer styles */
 footer {
+    background: url("../images/world-pattern.png") no-repeat;
+    background-size: cover;
     background-color: #090C0F;
     margin-top: 60px;
     padding: 55px 0;
@@ -53,3 +396,56 @@ footer ul li:hover {
 }
 
 /*? END Footer styles */
+/*todo END Home Page styles */
+
+
+
+
+
+
+
+
+
+
+/*todo START Chatbot Page styles */
+/*! START Chatbot styles */
+#chatbot-container aside {
+    background-color: #090C0F;
+    height: 100vh;
+    border-radius: 0 15px 15px 0;
+}
+
+#chatbot-container aside img {
+    display: block;
+    /* margin: 0 auto; */
+}
+
+
+#chatbot-container aside .chatbot-menu-container .chatbot-menu-line {
+    display: inline-block;
+    width: 10px;
+    height: 100%;
+    background: red;
+}
+
+#chatbot-container aside .chatbot-menu-container li {
+    background-color: rgba(255, 255, 255, 0.164);
+    margin-bottom: 10px;
+    height: 2em;
+    /* display: flex;
+    align-items: center; */
+}
+
+#chatbot-container aside .chatbot-menu-container li .menu-logo {
+    background: rgba(43, 0, 255, 0.295);
+    width: 10px;
+    height: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* flex-grow: 1; */
+}
+
+/* #chatbot-container aside .chatbot-menu-container li span{
+    flex-grow: 1;
+} */

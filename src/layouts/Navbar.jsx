@@ -15,7 +15,7 @@ const Navbar = () => {
     }
 
     return (
-        <Disclosure as="nav" className="container pt-2">
+        <Disclosure as="nav" className="container pt-2 mb-[40px]">
             {({ open }) => (
                 <>
                     <div className="mx-auto">
@@ -34,12 +34,13 @@ const Navbar = () => {
                             </div>
                             <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
                                 <div className="flex flex-shrink-0 items-center">
-                                    <Link to="/">
+                                    <Link to="/" className='relative'>
                                         <img
                                             className="h-8 w-auto"
                                             src="/images/logo-w-1.png"
                                             alt="Your Company"
                                         />
+                                        {/* <span className='text-white bg-[#7B59C5] rounded-full px-[3px] py-[0px] text-[.7rem] absolute right-[-6px] top-[-2px]'>Chat</span> */}
                                     </Link>
                                 </div>
 
