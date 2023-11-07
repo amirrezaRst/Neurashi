@@ -13,13 +13,10 @@ const Home = () => {
 
             <HomeHeader />
 
-            <HomeChart />
+            {/* <HomeChart /> */}
 
-            <section id="home-reporter-container" className="relative pt-[100px]">
-                {/* <svg xmlns="http://www.w3.org/2000/svg" className="absolute top-0" viewBox="0 0 1440 320">
-                    <path fill="#0E1116" fill-opacity="1" d="M0,32L48,53.3C96,75,192,117,288,128C384,139,480,117,576,90.7C672,64,768,32,864,32C960,32,1056,64,1152,69.3C1248,75,1344,53,1392,42.7L1440,32L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path>
-                </svg> */}
-                <svg xmlns="http://www.w3.org/2000/svg" className="absolute top-0" viewBox="0 0 1440 320"><path fill="#0E1116" fill-opacity="1" d="M0,96L48,85.3C96,75,192,53,288,48C384,43,480,53,576,96C672,139,768,213,864,250.7C960,288,1056,288,1152,266.7C1248,245,1344,203,1392,181.3L1440,160L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
+            {/* <section id="home-reporter-container" className="relative pt-[100px]">
+                               <svg xmlns="http://www.w3.org/2000/svg" className="absolute top-0" viewBox="0 0 1440 320"><path fill="#0E1116" fill-opacity="1" d="M0,96L48,85.3C96,75,192,53,288,48C384,43,480,53,576,96C672,139,768,213,864,250.7C960,288,1056,288,1152,266.7C1248,245,1344,203,1392,181.3L1440,160L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
                 <div className="grid md:grid-cols-2 grid-cols-1 gap-0 md:gap-2 relative">
                     <div className="info-section px-8 py-8 md:px-8 md:mt-0 mt-1">
                         <h2 className="mb-6">World news analysis</h2>
@@ -38,7 +35,7 @@ const Home = () => {
                         <img src="/images/reporter.png" className="lg:w-[80%] md:w-[90%] sm:w-[60%] w-[85%] inline md:absolute bottom-0" alt="market analysis with ai" />
                     </div>
                 </div>
-            </section>
+            </section> */}
 
 
             <section id="home-services-container">

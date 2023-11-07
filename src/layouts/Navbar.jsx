@@ -1,12 +1,13 @@
 import { Disclosure, Menu, Transition } from '@headlessui/react'
-import { Link } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 
 
 const Navbar = () => {
+    const location = useLocation().pathname;
 
     const navigation = [
-        { name: 'Use Cases', href: '#', current: false },
-        { name: 'Developers', href: '#', current: false },
+        { name: 'Gallery', href: '/gallery', current: false },
+        { name: 'About Us', href: '/about-us', current: false },
         { name: 'Learn', href: '#', current: false },
     ]
 
@@ -14,10 +15,12 @@ const Navbar = () => {
         return classes.filter(Boolean).join(' ')
     }
 
+    if (location == "/customize") return
+
     return (
-        <Disclosure as="nav" className="container pt-2 mb-[40px]">
+        <Disclosure as="nav" className={`navbar pt-2 mb-[40px] w-full ${location == "/" ? "absolute z-10" : null} `}>
             {({ open }) => (
-                <>
+                <div className='container'>
                     <div className="mx-auto">
                         <div className="relative flex h-16 items-center justify-between">
                             <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
@@ -58,10 +61,12 @@ const Navbar = () => {
                                                 )}
                                                 aria-current={item.current ? 'page' : undefined}
                                             >
-                                                {item.name} <i class="fa-solid fa-caret-down"></i>
+                                                {item.name}
+                                                {/* <i class="fa-solid fa-caret-down"></i> */}
                                             </Link>
                                         ))}
-                                        <button className='rounded-full border border-[#7b59c5] text-[#7b59c5] text-[15px] px-5 hover:text-white hover:bg-[#503390] transition-all'><i class="fa-solid fa-handshake mr-2"></i> Partnership</button>
+                                        <Link className='px-3 py-2 text-gray-100 text-[0.9em] hover:underline underline-offset-4 transition-all'>Partnership <i class="fa-regular fa-arrow-right ml-1"></i></Link>
+                                        {/* <button className='rounded-full border border-[#7b59c5] text-[#7b59c5] text-[15px] px-5 hover:text-white hover:bg-[#503390] transition-all'><i class="fa-solid fa-handshake mr-2"></i> Partnership</button> */}
                                     </div>
                                 </div>
 
@@ -87,7 +92,7 @@ const Navbar = () => {
                             ))}
                         </div>
                     </Disclosure.Panel>
-                </>
+                </div>
             )}
         </Disclosure>
     );

@@ -1,28 +1,67 @@
+import { Fragment } from "react";
+
 const HomeHeader = () => {
     return (
-        <header className="home-hero-header container">
+        <Fragment>
+            <header className="home-hero-header">
+                <div className="filter-pattern">
 
-            <div className="flex md:flex-row items-center flex-col-reverse" style={{ position: "relative" }}>
 
-                <div className="">
-                    <h1>XENO<span>BOT</span></h1>
-                    {/* <LogoSvg /> */}
-
-                    <h2 className="text-[#7B59C5] text-[30px] mt-0">Unlocking AI to Crypto</h2>
-                    <p className="text-[#a6a6a6] text-[14px]">The AI platform what empowers all your potentials and amplifies your true intelligence!</p>
-                    <div className="bg-[#070B0F] py-[10px] pl-[23px] pr-[10px] mt-6 rounded-full flex justify-between items-center">
-                        <p className="inline text-[#b1b1b1]">Ask any question about <span className="text-[#7B59C5] ml-2">Emotional</span></p>
-                        <button className=" border border-[#503390] text-[#503390] rounded-full px-7 py-2 transition-all hover:text-white hover:bg-[#503390]">Chat Bot <i class="fa-regular fa-comment ml-1"></i></button>
+                    {/* <div className="container lg:pt-[220px] md:pt-[180px] sm:pt-[7rem] pt-[5.5rem] xl:bg-orange-300 lg:bg-teal-300 md:bg-slate-50 sm:bg-rose-400 bg-none"> */}
+                    <div className="container lg:pt-[220px] md:pt-[180px] sm:pt-[7rem] pt-[5.5rem]">
+                        <div className="text-center">
+                            <h2>Image NFT Generator</h2>
+                            <h3>generate a short, brandable business name using artificial intelligence</h3>
+                            <div className="mt-6">
+                                <input type="text" className="lg:w-[40%] md:w-[50%] sm:w-[60%] w-[67%]" placeholder="Type something ...." />
+                                <button>Generate</button>
+                            </div>
+                        </div>
+                        {/* <div className="home-feature lg:grid-cols-3 md:grid-cols-2 divide-x divide-[#bebebe49]"> */}
+                        <div className="home-feature lg:mt-[5.5rem] sm:mt-[3rem] mt-[2rem] mb-10 lg:grid-cols-3 md:grid-cols-2 md:divide-x md:divide-y-0 divide-y divide-[#bebebe38]">
+                            <div className="feature-item lg:mb-0 mb-4 md:pt-2 pt-4">
+                                <div>
+                                    <i class="fal fa-hexagon-vertical-nft text-[1.7rem]"></i>
+                                </div>
+                                <div className="info">
+                                    <h3>Made NFT</h3>
+                                    <p>
+                                        Namelix generates short, catchy names with a state of the art language model
+                                    </p>
+                                </div>
+                            </div>
+                            <div className="feature-item lg:mb-0 mb-4 md:pt-2 pt-4">
+                                <div>
+                                    <i class="fal fa-dollar-sign text-[1.7rem]"></i>
+                                </div>
+                                <div className="info">
+                                    <h3>Fast sale of NFT</h3>
+                                    <p>
+                                        Decide whether you prioritize a shorter name, having a specific keyword or domain extension
+                                    </p>
+                                </div>
+                            </div>
+                            <div className="feature-item lg:mb-0 mb-4 md:pt-2 pt-4">
+                                <div>
+                                    <i class="fal fa-heart text-[1.5rem]"></i>
+                                </div>
+                                <div className="info">
+                                    <h3>Save your NFT</h3>
+                                    <p>
+                                        Our algorithm learns from the names you like, giving you better recommendations over time
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div className="md:ml-11 home-header-image">
-                    <img src="/images/cube2-3d.png" className="md:w-[550px] md:h-[500px] sm:w-[400px] sm:h-[350px] w-[350px] h-[350px]" alt="blockchain" />
-                </div>
-                <img src="/images/scroll.gif" className="scroll-down-gif lg:inline-block hidden" alt="" />
 
-            </div>
 
-        </header>
+                    <div className="bottom-pattern"></div>
+                </div>
+
+            </header>
+        </Fragment>
+
     );
 }
 
