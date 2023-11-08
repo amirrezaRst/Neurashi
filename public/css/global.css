@@ -41,7 +41,8 @@ body {
     height: 100%;
     /* background: #5033906a; */
     /* background: #0e111684; */
-    background: #0000004d;
+    /* background: #0e1116cd; */
+    background: #0e1116d9;
     backdrop-filter: blur(5px);
     /* background-color: #090C0F; */
     /* background-image: url("../images/—Pngtree—abstract purple wave stylish background_5777391.png"); */
@@ -73,18 +74,51 @@ body {
 
 
 
-
-
-.home-content .home-hero-header input {
-    /* background-color: #ffffff4f; */
-    background-color: #4646464f;
-    color: #e0e0e0;
-    padding: .4rem 1.2rem;
-    border: 2px solid #7b59c5;
-    border-radius: .4rem;
+.home-content .home-hero-header .input-box {
+    background-color: #070B0F;
+    display: inline;
+    /* padding: 1rem 1rem; */
+    border-radius: 40px;
+    padding: 1rem .3rem 1rem 0;
+    position: relative;
 }
 
-.home-content .home-hero-header input::placeholder {
+.home-content .home-hero-header .input-box div {
+    display: inline;
+    height: 100%;
+    position: absolute;
+    right: .5rem;
+    top: 0;
+}
+
+.home-content .home-hero-header .input-box div span {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.home-content .home-hero-header button {
+    background-color: rgba(255, 255, 255, 0.177);
+    border-radius: 40px;
+    padding: .42rem .65rem;
+    background-color: #7b59c5;
+    color: #fff;
+    border: 2px solid #7b59c5;
+    border-radius: 40px;
+    margin-left: 10px;
+    font-size: .95em;
+}
+
+.home-content .home-hero-header button:focus {
+    outline: none !important;
+}
+
+.home-content .home-hero-header input {
+    background-color: transparent;
+    border-radius: 40px;
+    height: 100%;
+    padding: .85rem .85rem .85rem .95rem;
     color: #e0e0e0;
     font-size: .9rem;
 }
@@ -93,14 +127,12 @@ body {
     outline: none !important;
 }
 
-.home-content .home-hero-header button {
-    background-color: #7b59c5;
-    border: 2px solid #7b59c5;
-    border-radius: .4rem;
-    margin-left: 10px;
-    color: #fff;
-    padding: .4rem 1rem;
+.home-content .home-hero-header input::placeholder {
+    color: #d0d0d0 !important;
+    font-size: .9rem;
 }
+
+
 
 .home-content .home-hero-header .home-feature {
     display: grid;
@@ -113,9 +145,7 @@ body {
 }
 
 .home-content .home-hero-header .home-feature .feature-item i {
-    /* font-size: 1.7rem; */
     color: #e0e0e0cf;
-    /* color: #7B59C5; */
 }
 
 .home-content .home-hero-header .home-feature .feature-item h3 {

@@ -13,8 +13,14 @@ const HomeHeader = () => {
                             <h2>Image NFT Generator</h2>
                             <h3>generate a short, brandable business name using artificial intelligence</h3>
                             <div className="mt-6">
-                                <input type="text" className="lg:w-[40%] md:w-[50%] sm:w-[60%] w-[67%]" placeholder="Type something ...." />
-                                <button>Generate</button>
+                                <div className="input-box">
+                                    <input type="text" className="lg:w-[40%] md:w-[50%] sm:w-[60%] w-[67%]" placeholder="Type something ...." />
+                                    <div>
+                                        <span>
+                                            <button>Generate</button>
+                                        </span>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         {/* <div className="home-feature lg:grid-cols-3 md:grid-cols-2 divide-x divide-[#bebebe49]"> */}
