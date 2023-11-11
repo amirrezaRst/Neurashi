@@ -32,6 +32,7 @@ const HomeHeader = () => {
                                 <div className="info">
                                     <h3>Made NFT</h3>
                                     <p>
+                                        
                                         Namelix generates short, catchy names with a state of the art language model
                                     </p>
                                 </div>
