@@ -27,7 +27,8 @@ body {
 }
 
 .home-content .home-hero-header {
-    background-image: url("../images/purple-pattern.jpg");
+    position: relative;
+    /* background-image: url("../images/purple-pattern.jpg"); */
     background-position: top center;
     background-repeat: no-repeat;
     background-size: 100% 120vh;
@@ -36,14 +37,20 @@ body {
     /* background-color: #503390; */
 }
 
+.home-content .home-hero-header video {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
 .home-content .home-hero-header .filter-pattern {
     width: 100%;
     height: 100%;
     /* background: #5033906a; */
     /* background: #0e111684; */
     /* background: #0e1116cd; */
-    background: #0e1116d9;
-    backdrop-filter: blur(5px);
+    background: #0e1116d6;
+    backdrop-filter: blur(40px);
     /* background-color: #090C0F; */
     /* background-image: url("../images/—Pngtree—abstract purple wave stylish background_5777391.png"); */
     background-size: 100% auto;
@@ -74,37 +81,20 @@ body {
 
 
 
-.home-content .home-hero-header .input-box {
-    background-color: #070B0F;
-    display: inline;
-    /* padding: 1rem 1rem; */
+.home-content .home-hero-header .header-inbox {
+    background-color: #0e111667;
+    padding: 1rem .5rem;
     border-radius: 40px;
-    padding: 1rem .3rem 1rem 0;
-    position: relative;
-}
-
-.home-content .home-hero-header .input-box div {
-    display: inline;
-    height: 100%;
-    position: absolute;
-    right: .5rem;
-    top: 0;
-}
-
-.home-content .home-hero-header .input-box div span {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
+    border: .1rem solid #7b59c5bd;
 }
 
 .home-content .home-hero-header button {
     background-color: rgba(255, 255, 255, 0.177);
     border-radius: 40px;
-    padding: .42rem .65rem;
-    background-color: #7b59c5;
+    padding: .55rem 1.2rem;
+    background: linear-gradient(330deg, #452981, #7b59c5);
     color: #fff;
-    border: 2px solid #7b59c5;
+    border: 2px solid #4f2f94;
     border-radius: 40px;
     margin-left: 10px;
     font-size: .95em;
@@ -203,6 +193,17 @@ body {
 
     .home-content .home-hero-header button {
         margin-top: 1rem;
+    }
+}
+
+@media screen and (max-width:643px) {
+    .home-content .home-hero-header .header-inbox {
+        padding: .6rem .5rem;
+    }
+
+    .home-content .home-hero-header button {
+        padding: .65rem 1.2rem !important;
+        margin-bottom: .5rem;
     }
 }
 
