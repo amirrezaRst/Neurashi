@@ -49,7 +49,7 @@ body {
     /* background: #5033906a; */
     /* background: #0e111684; */
     /* background: #0e1116cd; */
-    background: #0e1116d6;
+    background: #000;
     backdrop-filter: blur(40px);
     /* background-color: #090C0F; */
     /* background-image: url("../images/—Pngtree—abstract purple wave stylish background_5777391.png"); */
@@ -574,3 +574,49 @@ border-image-source: linear-gradient(290deg, #743ad5, #d53a9d); */
 
 /*? END Customize styles */
 /*todo END Customize Page styles */
+
+
+
+/*todo START Market styles  */
+.market-container {}
+
+.market-item {
+    background-color: #ffffff0d;
+    border: 2px solid #503390;
+    border-radius: .3rem;
+    padding: 1rem 1.3rem;
+    /* box-shadow: 0 2px 7px wheat; */
+    -webkit-box-shadow: 5px 5px 40px 0px rgba(123, 89, 197, 0.13);
+    box-shadow: 5px 5px 40px 0px rgba(123, 89, 197, 0.13);
+    backdrop-filter: blur(5px);
+    color: #fff;
+}
+
+.market-item img {
+    border-radius: .3rem;
+    width: 100%;
+    margin: auto auto;
+    /* height: 200px; */
+    margin: 0 auto;
+}
+
+.market-item h2 {
+    margin: .4rem 0;
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+.market-item p {
+    /* color: #5b5b5b; */
+    color: #bdbdbd;
+    /* white-space: nowrap; */
+    /* overflow: hidden; */
+    /* text-overflow: ellipsis; */
+}
+
+.market-item i {
+    color: #F7B900;
+    font-size: 1.3rem;
+}
+
+/*todo END Market styles  */

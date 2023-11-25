@@ -6,9 +6,10 @@ const Navbar = () => {
     const location = useLocation().pathname;
 
     const navigation = [
-        { name: 'Gallery', href: '/gallery', current: false },
-        { name: 'About Us', href: '/about-us', current: false },
-        { name: 'Learn', href: '#', current: false },
+        { name: 'AI Market  ', href: '/ai-market', current: false },
+        { name: 'Add AI Model', href: '/add-ai-model', current: false },
+        { name: 'Sign Up', href: '/sign-up', current: false },
+        { name: 'Register AI', href: '/register-ai', current: false },
     ]
 
     function classNames(...classes) {
@@ -65,7 +66,7 @@ const Navbar = () => {
                                                 {/* <i class="fa-solid fa-caret-down"></i> */}
                                             </Link>
                                         ))}
-                                        <Link className='px-3 py-2 text-gray-100 text-[0.9em] hover:underline underline-offset-4 transition-all'>Partnership <i class="fa-regular fa-arrow-right ml-1"></i></Link>
+                                        {/* <Link className='px-3 py-2 text-gray-100 text-[0.9em] hover:underline underline-offset-4 transition-all'>Partnership <i class="fa-regular fa-arrow-right ml-1"></i></Link> */}
                                         {/* <button className='rounded-full border border-[#7b59c5] text-[#7b59c5] text-[15px] px-5 hover:text-white hover:bg-[#503390] transition-all'><i class="fa-solid fa-handshake mr-2"></i> Partnership</button> */}
                                     </div>
                                 </div>
