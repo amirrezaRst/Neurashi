@@ -49,7 +49,7 @@ body {
     /* background: #5033906a; */
     /* background: #0e111684; */
     /* background: #0e1116cd; */
-    background: #000;
+    background: #08090c;
     backdrop-filter: blur(40px);
     /* background-color: #090C0F; */
     /* background-image: url("../images/—Pngtree—abstract purple wave stylish background_5777391.png"); */
@@ -576,47 +576,50 @@ border-image-source: linear-gradient(290deg, #743ad5, #d53a9d); */
 /*todo END Customize Page styles */
 
 
-
-/*todo START Market styles  */
-.market-container {}
-
-.market-item {
-    background-color: #ffffff0d;
-    border: 2px solid #503390;
-    border-radius: .3rem;
-    padding: 1rem 1.3rem;
-    /* box-shadow: 0 2px 7px wheat; */
-    -webkit-box-shadow: 5px 5px 40px 0px rgba(123, 89, 197, 0.13);
-    box-shadow: 5px 5px 40px 0px rgba(123, 89, 197, 0.13);
-    backdrop-filter: blur(5px);
-    color: #fff;
+/*! START Progress styles */
+.progress-container {
+    padding: 1rem;
+    /* background: #ffffff2c; */
+    /* background: ; */
+    display: flex;
+    justify-content: center;
 }
 
-.market-item img {
-    border-radius: .3rem;
-    width: 100%;
-    margin: auto auto;
-    /* height: 200px; */
-    margin: 0 auto;
+.progress-container .progress-item {
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid rgba(204, 0, 255, 0.45);
+    border-radius: 100%;
+    cursor: pointer;
 }
 
-.market-item h2 {
-    margin: .4rem 0;
-    font-weight: 500;
+.progress-container .active {
+    background: linear-gradient(137deg, #E601FF -55.66%, #EB00FF 20.56%, #9439CE 88.75%) !important;
+    border: none;
+}
+
+.progress-container .current {
+    border-color: #E601FF;
+}
+
+.progress-container .progress-item span {
+    color: rgba(204, 0, 255, 0.45);
     font-size: 1.2rem;
+    font-weight: 500;
 }
 
-.market-item p {
-    /* color: #5b5b5b; */
-    color: #bdbdbd;
-    /* white-space: nowrap; */
-    /* overflow: hidden; */
-    /* text-overflow: ellipsis; */
+.progress-container .progress-line {
+    height: 2px;
+    width: 100px;
+    background:rgba(204, 0, 255, 0.45);
 }
 
-.market-item i {
-    color: #F7B900;
-    font-size: 1.3rem;
+/*! END Progress styles */
+.top-bar{
+    width: 100%;
+    height: 300px;
+    background-color: blue;
 }
-
-/*todo END Market styles  */

@@ -25,7 +25,7 @@ const HomeHeader = () => {
                         {/* <HeaderFeature /> */}
                     </div>
                     {/* <div style={{ backgroundColor: "rgba(255, 255, 255, 0.078)" }}> */}
-                    <img src="/images/cube-3d.png" className="absolute w-[80%]" alt="" />
+                    {/* <img src="/images/cube-3d.png" className="absolute w-[80%]" alt="" /> */}
                     {/* </div> */}
 
 

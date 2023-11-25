@@ -7,13 +7,13 @@ import Market from "../AiPlace/Market";
 
 const MainApp = () => {
     return (
-        <MainLayout>
+        // // <MainLayout>
             <Routes>
                 <Route exact path="/" element={<Home />} />
                 <Route exact path="/customize" element={<Customize />} />
-                <Route exact path="/market" element={<Market />} />
+                {/* <Route exact path="/market" element={<Market />} /> */}
             </Routes>
-        </MainLayout>
+        // {/* </MainLayout> */}
     );
 }
 

@@ -2,16 +2,22 @@ import { Link } from "react-router-dom";
 import LogoSvg from "./LogoSvg";
 import HomeHeader from "./HomeHeader";
 import HomeChart from "./HomeChart";
-
+import ProgressBar from "../ProgressBar";
+import TopBar from "../TopBar";
 
 
 
 
 const Home = () => {
+
     return (
         <main className="home-content">
+            {/* <TopBar /> */}
 
-            <HomeHeader />
+
+            {/* <ProgressBar /> */}
+
+            {/* <HomeHeader /> */}
 
             {/* <HomeChart /> */}
 
@@ -38,7 +44,7 @@ const Home = () => {
             </section> */}
 
 
-            <section id="home-services-container">
+            {/* <section id="home-services-container">
 
                 <div className="container">
 
@@ -104,7 +110,7 @@ const Home = () => {
 
                 </div>
 
-            </section>
+            </section> */}
 
         </main>
     );
